@@ -1,7 +1,16 @@
 import "../index.css";
 
 import "semantic-ui-css/semantic.min.css";
-import { Container, Grid, Header } from "semantic-ui-react";
+import {
+  Container,
+  Grid,
+  Header,
+  Icon,
+  Label,
+  Menu,
+  Search,
+  Table,
+} from "semantic-ui-react";
 import { useMediaQuery } from "react-responsive";
 import WebsiteFooter from "./WebsiteFooter";
 import WebsiteHeader from "./WebsiteHeader";
@@ -14,41 +23,58 @@ const PublishedWork = () => {
     <>
       <Grid>
         <WebsiteHeader />
-        <Grid.Row style={{ margin: "15px", paddingBottom: "280px" }}>
+        <Grid.Row
+          style={{ margin: "15px", paddingBottom: "280px", minHeight: "800px" }}
+        >
           <Container text style={{ fontFamily: "Open Sans" }}>
             <Header as="h2">Published Work</Header>
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-              sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
-              vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-              imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-              link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus
-              elementum semper nisi. Aenean vulputate eleifend tellus. Aenean
-              leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-              Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
-              Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
-              ullamcorper ultricies nisi.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-              sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
-              vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-              imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-              link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus
-              elementum semper nisi. Aenean vulputate eleifend tellus. Aenean
-              leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-              Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
-              Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
-              ullamcorper ultricies nisi.
-            </p>
+            <Search />
+            <Table celled>
+              <Table.Header>
+                <Table.Row>
+                  <Table.HeaderCell>Header</Table.HeaderCell>
+                  <Table.HeaderCell>Header</Table.HeaderCell>
+                  <Table.HeaderCell>Header</Table.HeaderCell>
+                </Table.Row>
+              </Table.Header>
+
+              <Table.Body>
+                <Table.Row>
+                  <Table.Cell>Cell</Table.Cell>
+                  <Table.Cell>Cell</Table.Cell>
+                  <Table.Cell>Cell</Table.Cell>
+                </Table.Row>
+                <Table.Row>
+                  <Table.Cell>Cell</Table.Cell>
+                  <Table.Cell>Cell</Table.Cell>
+                  <Table.Cell>Cell</Table.Cell>
+                </Table.Row>
+                <Table.Row>
+                  <Table.Cell>Cell</Table.Cell>
+                  <Table.Cell>Cell</Table.Cell>
+                  <Table.Cell>Cell</Table.Cell>
+                </Table.Row>
+              </Table.Body>
+
+              <Table.Footer>
+                <Table.Row>
+                  <Table.HeaderCell colSpan="3">
+                    <Menu floated="right" pagination>
+                      <Menu.Item as="a" icon>
+                        <Icon name="chevron left" />
+                      </Menu.Item>
+                      <Menu.Item as="a">1</Menu.Item>
+                      <Menu.Item as="a">2</Menu.Item>
+                      <Menu.Item as="a">3</Menu.Item>
+                      <Menu.Item as="a">4</Menu.Item>
+                      <Menu.Item as="a" icon>
+                        <Icon name="chevron right" />
+                      </Menu.Item>
+                    </Menu>
+                  </Table.HeaderCell>
+                </Table.Row>
+              </Table.Footer>
+            </Table>
           </Container>
         </Grid.Row>
       </Grid>
