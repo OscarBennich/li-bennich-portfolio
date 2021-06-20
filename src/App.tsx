@@ -102,7 +102,11 @@ function App() {
           </Container>
         </Grid.Row>
       </Grid>
-      <Segment inverted vertical style={{ padding: "1.5em 0em" }}>
+      <Segment
+        inverted
+        vertical
+        style={{ padding: "1.5em 0em 0em 0em", width: "100%" }}
+      >
         <Container>
           <Grid centered inverted stackable>
             <Grid.Row>
