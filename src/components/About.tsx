@@ -1,66 +1,23 @@
-import "semantic-ui-css/semantic.min.css";
-import "./index.css";
-import {
-  Container,
-  Divider,
-  Grid,
-  Header,
-  Icon,
-  Label,
-  List,
-  Menu,
-  Segment,
-  Image,
-} from "semantic-ui-react";
-import { useMediaQuery } from "react-responsive";
-import picture from "./pictures/li-bennich-picture.jpg";
+import "../index.css";
 
-function App() {
+import "semantic-ui-css/semantic.min.css";
+import { Container, Grid, Header, Image } from "semantic-ui-react";
+import { useMediaQuery } from "react-responsive";
+import picture from "../pictures/li-bennich-picture.jpg";
+import WebsiteFooter from "./WebsiteFooter";
+import WebsiteHeader from "./WebsiteHeader";
+
+const About = () => {
   const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1224px)" });
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 
   return (
     <>
       <Grid>
-        <Grid.Row centered>
-          <Menu secondary borderless>
-            <Container>
-              <Menu.Item>
-                <Header
-                  floated="left"
-                  style={{
-                    fontSize: "250%",
-                    fontFamily: "Amatic SC",
-                    padding: "15px",
-                  }}
-                >
-                  Li Bennich-Björkman
-                </Header>
-              </Menu.Item>
-              {isDesktopOrLaptop && (
-                <>
-                  <Menu.Item position="right" link active>
-                    About
-                  </Menu.Item>
-                  <Menu.Item link>Published work</Menu.Item>
-                  <Menu.Item link>Contact</Menu.Item>
-                </>
-              )}
-
-              {isTabletOrMobile && (
-                <>
-                  <Menu.Item position="right">
-                    <Icon name="bars" size="big" />
-                  </Menu.Item>
-                </>
-              )}
-            </Container>
-          </Menu>
-        </Grid.Row>
-        <Divider />
+        <WebsiteHeader />
         <Grid.Row style={{ margin: "15px", paddingBottom: "280px" }}>
           <Container text style={{ fontFamily: "Open Sans" }}>
-            <Header as="h2">About</Header>
+            <Header as="h2">About Li</Header>
             <Image
               src={picture}
               size={isDesktopOrLaptop ? "medium" : "small"}
@@ -103,30 +60,9 @@ function App() {
           </Container>
         </Grid.Row>
       </Grid>
-      <Segment
-        inverted
-        vertical
-        style={{ padding: "1.5em 0em 0em 0em", width: "100%" }}
-      >
-        <Container>
-          <Grid centered inverted stackable>
-            <Grid.Row>
-              <Grid.Column width={3}>
-                <Header inverted as="h4" content="Made by" />
-                <Icon name="linkedin" />
-                <Label>Oscar Bennich-Björkman</Label>
-              </Grid.Column>
-              <Grid.Column width={3}>
-                <Header inverted as="h4" content="Source code" />
-                <Icon name="github" />
-                <Label>OscarBennich</Label>
-              </Grid.Column>
-            </Grid.Row>
-          </Grid>
-        </Container>
-      </Segment>
+      <WebsiteFooter />
     </>
   );
-}
+};
 
-export default App;
+export default About;
