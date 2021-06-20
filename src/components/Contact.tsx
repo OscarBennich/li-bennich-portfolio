@@ -1,7 +1,7 @@
 import "../index.css";
 
 import "semantic-ui-css/semantic.min.css";
-import { Container, Grid, Header } from "semantic-ui-react";
+import { Container, Grid, Header, Icon, Label } from "semantic-ui-react";
 import { useMediaQuery } from "react-responsive";
 import WebsiteFooter from "./WebsiteFooter";
 import WebsiteHeader from "./WebsiteHeader";
@@ -19,6 +19,18 @@ const Contact = () => {
         >
           <Container text style={{ fontFamily: "Open Sans" }}>
             <Header as="h2">Contact</Header>
+            <Grid.Column style={{ paddingBottom: "15px" }}>
+              <Icon name="phone" />
+              <Label>Phone number: xxx xxx xxx xxx </Label>
+            </Grid.Column>
+            <Grid.Column style={{ paddingBottom: "15px" }}>
+              <Icon name="mail" />
+              <Label>Email address: xxx.xxx@uu.se </Label>
+            </Grid.Column>
+            <Grid.Column style={{ paddingBottom: "15px" }}>
+              <Icon name="home" />
+              <Label>Address: xxx road 46</Label>
+            </Grid.Column>
           </Container>
         </Grid.Row>
       </Grid>
