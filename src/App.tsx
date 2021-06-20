@@ -66,6 +66,7 @@ function App() {
               size={isDesktopOrLaptop ? "medium" : "small"}
               rounded
               floated="left"
+              style={{ marginTop: "5px" }}
             />
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
