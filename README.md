@@ -3,3 +3,4 @@
 Built with:
 - React
 - TypeScript
+- Semantic UI React
