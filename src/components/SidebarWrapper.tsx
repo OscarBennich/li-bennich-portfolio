@@ -1,28 +1,40 @@
-import { Icon, Menu, Sidebar } from "semantic-ui-react";
+import { Link } from "react-router-dom";
+import { Button, Icon, Menu, Ref, Sidebar } from "semantic-ui-react";
 
-const SidebarWrapper = () => {
+interface SidebarWrapperProps {
+  showSidebar: boolean;
+  setShowSidebar: Function;
+}
+
+const SidebarWrapper = ({
+  showSidebar,
+  setShowSidebar,
+}: SidebarWrapperProps) => {
   return (
     <Sidebar
       as={Menu}
       animation="overlay"
-      icon="labeled"
       inverted
       vertical
-      visible
+      visible={showSidebar}
       width="thin"
       direction="right"
     >
-      <Menu.Item as="a">
-        <Icon name="home" />
-        Home
+      <Button
+        icon="arrow right"
+        basic
+        circular
+        inverted
+        onClick={() => setShowSidebar(false)}
+      />
+      <Menu.Item link onClick={() => setShowSidebar(false)}>
+        <Link to="/about">About</Link>
       </Menu.Item>
-      <Menu.Item as="a">
-        <Icon name="gamepad" />
-        Games
+      <Menu.Item link onClick={() => setShowSidebar(false)}>
+        <Link to="/published-work">Published work</Link>
       </Menu.Item>
-      <Menu.Item as="a">
-        <Icon name="camera" />
-        Channels
+      <Menu.Item link onClick={() => setShowSidebar(false)}>
+        <Link to="/contact">Contact</Link>
       </Menu.Item>
     </Sidebar>
   );

@@ -8,13 +8,17 @@ import {
   Icon,
   Divider,
   Header,
+  Button,
 } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import SidebarWrapper from "./SidebarWrapper";
+import { useState } from "react";
 
 const WebsiteHeader = () => {
   const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1224px)" });
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+
+  const [showSidebar, setShowSidebar] = useState<boolean>(false);
 
   return (
     <>
@@ -52,9 +56,19 @@ const WebsiteHeader = () => {
             {isTabletOrMobile && (
               <>
                 <Menu.Item position="right">
-                  <Icon name="bars" size="big" />
+                  <Button
+                    icon
+                    basic
+                    circular
+                    onClick={() => setShowSidebar(true)}
+                  >
+                    <Icon name="bars" size="big"></Icon>
+                  </Button>
                 </Menu.Item>
-                <SidebarWrapper />
+                <SidebarWrapper
+                  showSidebar={showSidebar}
+                  setShowSidebar={setShowSidebar}
+                />
               </>
             )}
           </Container>
