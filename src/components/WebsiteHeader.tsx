@@ -10,6 +10,7 @@ import {
   Header,
 } from "semantic-ui-react";
 import { Link } from "react-router-dom";
+import SidebarWrapper from "./SidebarWrapper";
 
 const WebsiteHeader = () => {
   const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1224px)" });
@@ -53,6 +54,7 @@ const WebsiteHeader = () => {
                 <Menu.Item position="right">
                   <Icon name="bars" size="big" />
                 </Menu.Item>
+                <SidebarWrapper />
               </>
             )}
           </Container>
