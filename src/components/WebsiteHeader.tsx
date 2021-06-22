@@ -10,7 +10,7 @@ import {
   Header,
   Button,
 } from "semantic-ui-react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import SidebarWrapper from "./SidebarWrapper";
 import { useState } from "react";
 
@@ -29,6 +29,8 @@ const WebsiteHeader = () => {
     fontSize: "180%",
     paddingTop: "5px",
   };
+
+  let location = useLocation();
 
   return (
     <>
@@ -55,19 +57,52 @@ const WebsiteHeader = () => {
             </Menu.Item>
             {isDesktopOrLaptop && (
               <>
-                <Menu.Item position="right" link>
-                  <NavLink to="/about" activeClassName="primaryColor">
-                    About
+                <Menu.Item
+                  position="right"
+                  active={location.pathname === "/about"}
+                >
+                  <NavLink
+                    to="/about"
+                    style={{ color: "black", fontWeight: "bold" }}
+                  >
+                    <span
+                      className="primaryColor"
+                      style={{ fontWeight: "bold" }}
+                    >
+                      A
+                    </span>
+                    bout
                   </NavLink>
                 </Menu.Item>
-                <Menu.Item link color="black">
-                  <NavLink to="/published-work" activeClassName="primaryColor">
-                    Published work
+                <Menu.Item
+                  color="black"
+                  active={location.pathname === "/published-work"}
+                >
+                  <NavLink
+                    to="/published-work"
+                    style={{ color: "black", fontWeight: "bold" }}
+                  >
+                    <span
+                      className="primaryColor"
+                      style={{ fontWeight: "bold" }}
+                    >
+                      P
+                    </span>
+                    ublished work
                   </NavLink>
                 </Menu.Item>
-                <Menu.Item link>
-                  <NavLink to="/contact" activeClassName="primaryColor">
-                    Contact
+                <Menu.Item active={location.pathname === "/contact"}>
+                  <NavLink
+                    to="/contact"
+                    style={{ color: "black", fontWeight: "bold" }}
+                  >
+                    <span
+                      className="primaryColor"
+                      style={{ fontWeight: "bold" }}
+                    >
+                      C
+                    </span>
+                    ontact
                   </NavLink>
                 </Menu.Item>
               </>

@@ -5,9 +5,10 @@
 html,
 body {
   width: 100%;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #fdfffc !important;
 }
 
 .trailsText {
