@@ -23,16 +23,28 @@ const WebsiteHeader = () => {
   return (
     <>
       <Grid.Row centered>
-        <Menu secondary borderless>
+        <Menu
+          secondary
+          borderless
+          style={isTabletOrMobile ? { marginTop: "15px" } : {}}
+        >
           <Container>
             <Menu.Item>
               <Link to="/home">
                 <Header
-                  style={{
-                    fontFamily: "Vollkorn",
-                    fontSize: "250%",
-                    padding: "15px",
-                  }}
+                  style={
+                    isDesktopOrLaptop
+                      ? {
+                          fontFamily: "Vollkorn",
+                          fontSize: "250%",
+                          paddingTop: "15px",
+                        }
+                      : {
+                          fontFamily: "Vollkorn",
+                          fontSize: "180%",
+                          paddingTop: "5px",
+                        }
+                  }
                   floated="left"
                 >
                   Li Bennich-Björkman
