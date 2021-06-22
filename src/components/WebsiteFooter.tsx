@@ -20,13 +20,19 @@ const WebsiteFooter = () => {
         <Grid centered inverted stackable>
           <Grid.Row>
             <Grid.Column width={3}>
-              <a href="https://www.linkedin.com/in/oscar-bennich-bjorkman/">
+              <a
+                href="https://www.linkedin.com/in/oscar-bennich-bjorkman/"
+                target="_blank"
+              >
                 <Icon name="linkedin" size="big" />
               </a>
               <Label pointing="left">Made by</Label>
             </Grid.Column>
             <Grid.Column width={3}>
-              <a href="https://github.com/OscarBennich/li-bennich-portfolio">
+              <a
+                href="https://github.com/OscarBennich/li-bennich-portfolio"
+                target="_blank"
+              >
                 <Icon name="github" size="big" />
               </a>
               <Label pointing="left">Source code</Label>
