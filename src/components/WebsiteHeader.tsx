@@ -10,7 +10,7 @@ import {
   Header,
   Button,
 } from "semantic-ui-react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import SidebarWrapper from "./SidebarWrapper";
 import { useState } from "react";
 
@@ -42,13 +42,37 @@ const WebsiteHeader = () => {
             {isDesktopOrLaptop && (
               <>
                 <Menu.Item position="right" link>
-                  <Link to="/about">About</Link>
+                  <NavLink
+                    to="/about"
+                    activeStyle={{
+                      fontWeight: "bold",
+                      color: "red",
+                    }}
+                  >
+                    About
+                  </NavLink>
                 </Menu.Item>
                 <Menu.Item link>
-                  <Link to="/published-work">Published work</Link>
+                  <NavLink
+                    to="/published-work"
+                    activeStyle={{
+                      fontWeight: "bold",
+                      color: "red",
+                    }}
+                  >
+                    Published work
+                  </NavLink>
                 </Menu.Item>
                 <Menu.Item link>
-                  <Link to="/contact">Contact</Link>
+                  <NavLink
+                    to="/contact"
+                    activeStyle={{
+                      fontWeight: "bold",
+                      color: "red",
+                    }}
+                  >
+                    Contact
+                  </NavLink>
                 </Menu.Item>
               </>
             )}
