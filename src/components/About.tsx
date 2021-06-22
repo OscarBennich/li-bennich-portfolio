@@ -11,7 +11,9 @@ const About = () => {
     <>
       <Grid.Row style={{ margin: "15px", paddingBottom: "280px" }}>
         <Container text>
-          <Header as="h2">About Li</Header>
+          <Header as="h2" className="headerFont">
+            About Li
+          </Header>
           <Image
             src={picture}
             size={isDesktopOrLaptop ? "medium" : "small"}

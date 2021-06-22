@@ -17,8 +17,10 @@ const PublishedWork = () => {
       <Grid.Row
         style={{ margin: "15px", paddingBottom: "280px", minHeight: "800px" }}
       >
-        <Container text style={{ fontFamily: "Open Sans" }}>
-          <Header as="h2">Published Work</Header>
+        <Container text>
+          <Header as="h2" className="headerFont">
+            Published Work
+          </Header>
           <Search />
           <Table celled>
             <Table.Header>

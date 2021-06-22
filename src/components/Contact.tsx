@@ -8,8 +8,10 @@ const Contact = () => {
       <Grid.Row
         style={{ margin: "15px", paddingBottom: "280px", minHeight: "800px" }}
       >
-        <Container text style={{ fontFamily: "Open Sans" }}>
-          <Header as="h2">Contact</Header>
+        <Container text>
+          <Header as="h2" className="headerFont">
+            Contact
+          </Header>
           <Grid.Column style={{ paddingBottom: "15px" }}>
             <Icon name="phone" />
             <Label>Phone number: xxx xxx xxx xxx </Label>

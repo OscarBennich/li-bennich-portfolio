@@ -1,3 +1,4 @@
+import "../index.css";
 import { NavLink } from "react-router-dom";
 import { Button, Menu, Sidebar } from "semantic-ui-react";
 
@@ -30,10 +31,7 @@ const SidebarWrapper = ({
       <NavLink
         to="/about"
         onClick={() => setShowSidebar(false)}
-        activeStyle={{
-          fontWeight: "bold",
-          color: "red",
-        }}
+        activeClassName="primaryColor"
         style={{ margin: "10px" }}
       >
         About
@@ -41,10 +39,7 @@ const SidebarWrapper = ({
       <NavLink
         to="/published-work"
         onClick={() => setShowSidebar(false)}
-        activeStyle={{
-          fontWeight: "bold",
-          color: "red",
-        }}
+        activeClassName="primaryColor"
         style={{ margin: "10px" }}
       >
         Published work
@@ -52,10 +47,7 @@ const SidebarWrapper = ({
       <NavLink
         to="/contact"
         onClick={() => setShowSidebar(false)}
-        activeStyle={{
-          fontWeight: "bold",
-          color: "red",
-        }}
+        activeClassName="primaryColor"
         style={{ margin: "10px" }}
       >
         Contact

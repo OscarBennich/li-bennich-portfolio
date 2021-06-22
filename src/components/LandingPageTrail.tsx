@@ -29,6 +29,7 @@ const LandingPageTrail = () => {
           Genius
         </span>
         <span
+          className="primaryColor"
           style={
             isDesktopOrLaptop ? { fontSize: "6em" } : { fontSize: "4.5em" }
           }

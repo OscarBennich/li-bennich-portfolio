@@ -20,6 +20,16 @@ const WebsiteHeader = () => {
 
   const [showSidebar, setShowSidebar] = useState<boolean>(false);
 
+  const DesktopHeaderStyle = {
+    fontSize: "250%",
+    paddingTop: "15px",
+  };
+
+  const MobileHeaderStyle = {
+    fontSize: "180%",
+    paddingTop: "5px",
+  };
+
   return (
     <>
       <Grid.Row centered>
@@ -33,56 +43,30 @@ const WebsiteHeader = () => {
               <Link to="/home">
                 <Header
                   style={
-                    isDesktopOrLaptop
-                      ? {
-                          fontFamily: "Vollkorn",
-                          fontSize: "250%",
-                          paddingTop: "15px",
-                        }
-                      : {
-                          fontFamily: "Vollkorn",
-                          fontSize: "180%",
-                          paddingTop: "5px",
-                        }
+                    isDesktopOrLaptop ? DesktopHeaderStyle : MobileHeaderStyle
                   }
                   floated="left"
+                  className="headerFont"
                 >
-                  Li Bennich-Björkman
+                  <span className="primaryColor headerFont">Li </span>
+                  Bennich-Björkman
                 </Header>
               </Link>
             </Menu.Item>
             {isDesktopOrLaptop && (
               <>
                 <Menu.Item position="right" link>
-                  <NavLink
-                    to="/about"
-                    activeStyle={{
-                      fontWeight: "bold",
-                      color: "red",
-                    }}
-                  >
+                  <NavLink to="/about" activeClassName="primaryColor">
                     About
                   </NavLink>
                 </Menu.Item>
-                <Menu.Item link>
-                  <NavLink
-                    to="/published-work"
-                    activeStyle={{
-                      fontWeight: "bold",
-                      color: "red",
-                    }}
-                  >
+                <Menu.Item link color="black">
+                  <NavLink to="/published-work" activeClassName="primaryColor">
                     Published work
                   </NavLink>
                 </Menu.Item>
                 <Menu.Item link>
-                  <NavLink
-                    to="/contact"
-                    activeStyle={{
-                      fontWeight: "bold",
-                      color: "red",
-                    }}
-                  >
+                  <NavLink to="/contact" activeClassName="primaryColor">
                     Contact
                   </NavLink>
                 </Menu.Item>

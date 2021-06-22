@@ -22,3 +22,11 @@ body {
   overflow: hidden;
   margin-bottom: 35px;
 }
+
+.headerFont {
+  font-family: "Vollkorn" !important;
+}
+
+.primaryColor {
+  color: #cf1259;
+}
