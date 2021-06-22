@@ -29,8 +29,8 @@ const WebsiteHeader = () => {
               <Link to="/home">
                 <Header
                   style={{
+                    fontFamily: "Vollkorn",
                     fontSize: "250%",
-                    fontFamily: "Amatic SC",
                     padding: "15px",
                   }}
                   floated="left"

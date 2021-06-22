@@ -10,7 +10,7 @@ const About = () => {
   return (
     <>
       <Grid.Row style={{ margin: "15px", paddingBottom: "280px" }}>
-        <Container text style={{ fontFamily: "Open Sans" }}>
+        <Container text>
           <Header as="h2">About Li</Header>
           <Image
             src={picture}
