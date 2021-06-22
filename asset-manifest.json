@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/li-bennich-portfolio/static/css/main.e2b66306.chunk.css",
-    "main.js": "/li-bennich-portfolio/static/js/main.43a1392d.chunk.js",
-    "main.js.map": "/li-bennich-portfolio/static/js/main.43a1392d.chunk.js.map",
-    "runtime-main.js": "/li-bennich-portfolio/static/js/runtime-main.321d1e3b.js",
-    "runtime-main.js.map": "/li-bennich-portfolio/static/js/runtime-main.321d1e3b.js.map",
+    "main.css": "/li-bennich-portfolio/static/css/main.d4963cc2.chunk.css",
+    "main.js": "/li-bennich-portfolio/static/js/main.b42c1fd1.chunk.js",
+    "main.js.map": "/li-bennich-portfolio/static/js/main.b42c1fd1.chunk.js.map",
+    "runtime-main.js": "/li-bennich-portfolio/static/js/runtime-main.c418e06e.js",
+    "runtime-main.js.map": "/li-bennich-portfolio/static/js/runtime-main.c418e06e.js.map",
     "static/css/2.aca1bd23.chunk.css": "/li-bennich-portfolio/static/css/2.aca1bd23.chunk.css",
-    "static/js/2.e4bb9652.chunk.js": "/li-bennich-portfolio/static/js/2.e4bb9652.chunk.js",
-    "static/js/2.e4bb9652.chunk.js.map": "/li-bennich-portfolio/static/js/2.e4bb9652.chunk.js.map",
-    "static/js/3.5dd214b2.chunk.js": "/li-bennich-portfolio/static/js/3.5dd214b2.chunk.js",
-    "static/js/3.5dd214b2.chunk.js.map": "/li-bennich-portfolio/static/js/3.5dd214b2.chunk.js.map",
+    "static/js/2.aedf19d5.chunk.js": "/li-bennich-portfolio/static/js/2.aedf19d5.chunk.js",
+    "static/js/2.aedf19d5.chunk.js.map": "/li-bennich-portfolio/static/js/2.aedf19d5.chunk.js.map",
+    "static/js/3.f70cb3a3.chunk.js": "/li-bennich-portfolio/static/js/3.f70cb3a3.chunk.js",
+    "static/js/3.f70cb3a3.chunk.js.map": "/li-bennich-portfolio/static/js/3.f70cb3a3.chunk.js.map",
     "index.html": "/li-bennich-portfolio/index.html",
     "static/css/2.aca1bd23.chunk.css.map": "/li-bennich-portfolio/static/css/2.aca1bd23.chunk.css.map",
-    "static/css/main.e2b66306.chunk.css.map": "/li-bennich-portfolio/static/css/main.e2b66306.chunk.css.map",
-    "static/js/2.e4bb9652.chunk.js.LICENSE.txt": "/li-bennich-portfolio/static/js/2.e4bb9652.chunk.js.LICENSE.txt",
+    "static/css/main.d4963cc2.chunk.css.map": "/li-bennich-portfolio/static/css/main.d4963cc2.chunk.css.map",
+    "static/js/2.aedf19d5.chunk.js.LICENSE.txt": "/li-bennich-portfolio/static/js/2.aedf19d5.chunk.js.LICENSE.txt",
     "static/media/semantic.min.css": "/li-bennich-portfolio/static/media/outline-icons.ddae9b1b.woff",
     "static/media/li-bennich-picture.af33e8be.jpg": "/li-bennich-portfolio/static/media/li-bennich-picture.af33e8be.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.321d1e3b.js",
+    "static/js/runtime-main.c418e06e.js",
     "static/css/2.aca1bd23.chunk.css",
-    "static/js/2.e4bb9652.chunk.js",
-    "static/css/main.e2b66306.chunk.css",
-    "static/js/main.43a1392d.chunk.js"
+    "static/js/2.aedf19d5.chunk.js",
+    "static/css/main.d4963cc2.chunk.css",
+    "static/js/main.b42c1fd1.chunk.js"
   ]
 }
