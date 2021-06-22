@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Button, Menu, Sidebar } from "semantic-ui-react";
 
 interface SidebarWrapperProps {
@@ -27,15 +27,39 @@ const SidebarWrapper = ({
         inverted
         onClick={() => setShowSidebar(false)}
       />
-      <Menu.Item link onClick={() => setShowSidebar(false)}>
-        <Link to="/about">About</Link>
-      </Menu.Item>
-      <Menu.Item link onClick={() => setShowSidebar(false)}>
-        <Link to="/published-work">Published work</Link>
-      </Menu.Item>
-      <Menu.Item link onClick={() => setShowSidebar(false)}>
-        <Link to="/contact">Contact</Link>
-      </Menu.Item>
+      <NavLink
+        to="/about"
+        onClick={() => setShowSidebar(false)}
+        activeStyle={{
+          fontWeight: "bold",
+          color: "red",
+        }}
+        style={{ margin: "10px" }}
+      >
+        About
+      </NavLink>
+      <NavLink
+        to="/published-work"
+        onClick={() => setShowSidebar(false)}
+        activeStyle={{
+          fontWeight: "bold",
+          color: "red",
+        }}
+        style={{ margin: "10px" }}
+      >
+        Published work
+      </NavLink>
+      <NavLink
+        to="/contact"
+        onClick={() => setShowSidebar(false)}
+        activeStyle={{
+          fontWeight: "bold",
+          color: "red",
+        }}
+        style={{ margin: "10px" }}
+      >
+        Contact
+      </NavLink>
     </Sidebar>
   );
 };
