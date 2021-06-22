@@ -1,13 +1,6 @@
 import "../index.css";
 
-import {
-  Segment,
-  Container,
-  Grid,
-  Header,
-  Icon,
-  Label,
-} from "semantic-ui-react";
+import { Segment, Container, Grid, Icon, Label } from "semantic-ui-react";
 
 const WebsiteFooter = () => {
   return (
@@ -22,6 +15,7 @@ const WebsiteFooter = () => {
             <Grid.Column width={3}>
               <a
                 href="https://www.linkedin.com/in/oscar-bennich-bjorkman/"
+                rel="noreferrer"
                 target="_blank"
               >
                 <Icon name="linkedin" size="big" />
@@ -31,6 +25,7 @@ const WebsiteFooter = () => {
             <Grid.Column width={3}>
               <a
                 href="https://github.com/OscarBennich/li-bennich-portfolio"
+                rel="noreferrer"
                 target="_blank"
               >
                 <Icon name="github" size="big" />
