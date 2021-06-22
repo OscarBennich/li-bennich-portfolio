@@ -1,5 +1,4 @@
 import "../index.css";
-
 import "semantic-ui-css/semantic.min.css";
 import { Container, Grid, Header, Image } from "semantic-ui-react";
 import { useMediaQuery } from "react-responsive";

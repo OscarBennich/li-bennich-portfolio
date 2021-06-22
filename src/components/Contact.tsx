@@ -1,15 +1,8 @@
 import "../index.css";
-
 import "semantic-ui-css/semantic.min.css";
 import { Container, Grid, Header, Icon, Label } from "semantic-ui-react";
-import { useMediaQuery } from "react-responsive";
-import WebsiteFooter from "./WebsiteFooter";
-import WebsiteHeader from "./WebsiteHeader";
 
 const Contact = () => {
-  const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1224px)" });
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
-
   return (
     <>
       <Grid.Row

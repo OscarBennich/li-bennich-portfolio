@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Button, Icon, Menu, Ref, Sidebar } from "semantic-ui-react";
+import { Button, Menu, Sidebar } from "semantic-ui-react";
 
 interface SidebarWrapperProps {
   showSidebar: boolean;

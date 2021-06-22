@@ -1,10 +1,8 @@
 import "../index.css";
-
 import "semantic-ui-css/semantic.min.css";
 import { Grid } from "semantic-ui-react";
 import WebsiteFooter from "./WebsiteFooter";
 import WebsiteHeader from "./WebsiteHeader";
-import { useState } from "react";
 import { Switch, Route } from "react-router-dom";
 import About from "./About";
 import Contact from "./Contact";
