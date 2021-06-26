@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/li-bennich-portfolio/static/css/main.a3826683.chunk.css",
+    "main.css": "/li-bennich-portfolio/static/css/main.6be07adf.chunk.css",
     "main.js": "/li-bennich-portfolio/static/js/main.2884df68.chunk.js",
     "main.js.map": "/li-bennich-portfolio/static/js/main.2884df68.chunk.js.map",
     "runtime-main.js": "/li-bennich-portfolio/static/js/runtime-main.c418e06e.js",
@@ -12,7 +12,7 @@
     "static/js/3.f70cb3a3.chunk.js.map": "/li-bennich-portfolio/static/js/3.f70cb3a3.chunk.js.map",
     "index.html": "/li-bennich-portfolio/index.html",
     "static/css/2.aca1bd23.chunk.css.map": "/li-bennich-portfolio/static/css/2.aca1bd23.chunk.css.map",
-    "static/css/main.a3826683.chunk.css.map": "/li-bennich-portfolio/static/css/main.a3826683.chunk.css.map",
+    "static/css/main.6be07adf.chunk.css.map": "/li-bennich-portfolio/static/css/main.6be07adf.chunk.css.map",
     "static/js/2.fd5270e2.chunk.js.LICENSE.txt": "/li-bennich-portfolio/static/js/2.fd5270e2.chunk.js.LICENSE.txt",
     "static/media/semantic.min.css": "/li-bennich-portfolio/static/media/outline-icons.ddae9b1b.woff",
     "static/media/li-bennich-picture.af33e8be.jpg": "/li-bennich-portfolio/static/media/li-bennich-picture.af33e8be.jpg"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.c418e06e.js",
     "static/css/2.aca1bd23.chunk.css",
     "static/js/2.fd5270e2.chunk.js",
-    "static/css/main.a3826683.chunk.css",
+    "static/css/main.6be07adf.chunk.css",
     "static/js/main.2884df68.chunk.js"
   ]
 }
