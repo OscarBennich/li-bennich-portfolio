@@ -1,5 +1,4 @@
 import "../index.css";
-
 import { useMediaQuery } from "react-responsive";
 import {
   Grid,
@@ -9,13 +8,10 @@ import {
   Divider,
   Header,
   Button,
-  Radio,
-  Flag,
 } from "semantic-ui-react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import SidebarWrapper from "./SidebarWrapper";
 import { useState } from "react";
-import LanguageSlider from "./LanguageSlider";
 
 const WebsiteHeader = () => {
   const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1224px)" });

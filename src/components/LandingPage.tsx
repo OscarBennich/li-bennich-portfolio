@@ -1,9 +1,7 @@
 import "../index.css";
 import "semantic-ui-css/semantic.min.css";
-import { Grid, Rail, Image, Segment } from "semantic-ui-react";
+import { Grid } from "semantic-ui-react";
 import LandingPageTrail from "./LandingPageTrail";
-import picture from "../pictures/li-bennich-picture.jpg";
-import { useMediaQuery } from "react-responsive";
 import { useEffect } from "react";
 
 const LandingPage = () => {

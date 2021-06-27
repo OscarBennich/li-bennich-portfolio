@@ -1,5 +1,4 @@
 import "../index.css";
-
 import { Segment, Container, Grid, Icon, Label } from "semantic-ui-react";
 
 const WebsiteFooter = () => {
