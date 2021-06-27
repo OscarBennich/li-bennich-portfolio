@@ -1,8 +1,13 @@
 import "../index.css";
 import "semantic-ui-css/semantic.min.css";
 import { Container, Grid, Header, Icon, Label } from "semantic-ui-react";
+import { useEffect } from "react";
 
 const Contact = () => {
+  useEffect(() => {
+    document.title = "Li Bennich-Björkman | Contact";
+  }, []);
+
   return (
     <>
       <Grid.Row

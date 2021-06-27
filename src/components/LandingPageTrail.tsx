@@ -1,5 +1,7 @@
 import { useMediaQuery } from "react-responsive";
+import { Grid, Image, Rail, Segment } from "semantic-ui-react";
 import Trail from "./Trail";
+import picture from "../pictures/li-bennich-picture.jpg";
 
 const LandingPageTrail = () => {
   const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1224px)" });

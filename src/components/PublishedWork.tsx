@@ -10,8 +10,13 @@ import {
   Search,
   Table,
 } from "semantic-ui-react";
+import { useEffect } from "react";
 
 const PublishedWork = () => {
+  useEffect(() => {
+    document.title = "Li Bennich-Björkman | Published Work";
+  }, []);
+
   return (
     <>
       <Grid.Row

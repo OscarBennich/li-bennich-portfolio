@@ -3,9 +3,14 @@ import "semantic-ui-css/semantic.min.css";
 import { Container, Grid, Header, Image } from "semantic-ui-react";
 import { useMediaQuery } from "react-responsive";
 import picture from "../pictures/li-bennich-picture.jpg";
+import { useEffect } from "react";
 
 const About = () => {
   const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1224px)" });
+
+  useEffect(() => {
+    document.title = "Li Bennich-Björkman | About";
+  }, []);
 
   return (
     <>
